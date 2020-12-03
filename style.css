@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    background-color: lightgray;
+    border-bottom: white solid 0.1em;
+    border-radius: 0 0 1em 1em;
+}
+.nav{
+    padding: 0.5em 1em;
+    border-right: 0.1em solid white;
+}
+.nav:hover{
+    background-color: rgb(255, 255, 255);
+}
+.b{
+    height: 3000px;
+}
