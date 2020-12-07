@@ -16,12 +16,11 @@ function printName(){
     if(i < name.length){
         type.innerHTML += name.charAt(i);
         i++;
-        setTimeout(printName, 240);
+        setTimeout(printName, 300);
     }
 }
 /* code start */
 nav.addEventListener("click", topPage);
 nav1.addEventListener("click", block1);
-setTimeout(printName, 240);
-
+printName();
 }
