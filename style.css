@@ -18,12 +18,12 @@ nav{
     width: 100%;
     position: fixed;
     display: flex;
-    background-color: lightgray;
+    background-color: rgb(200, 200, 200);
     border-radius: 0 0 1em 0;
 }
 #nav, #nav1, #nav2, #nav3{
     border: none;
-    background-color: lightgray;
+    background-color: rgb(200, 200, 200);
     font-family: "frag";
     border-right: 0.1em solid white;
     padding: 0.5em 1em;
@@ -37,10 +37,11 @@ nav{
 }
 #pres{
     padding: 3em 0 0 1em;
+    display: flex;
+    justify-content: space-around;
 }
 #name{
     font-family: "Minecraftia-Regular";
-    text-align: center;
     font-weight: normal;
 }
 #under{
@@ -53,13 +54,23 @@ nav{
       visibility: hidden;
     }
   }
-  h2{
-      text-align: center;
+.round{
+    border-radius: 50%;
+    border: 2px solid #ff0000;
+}
+.w40{
+    width: 40%;
+}
+.center{
+    text-align: center;
+  }
+  h3{
+      padding: .5em 0;
   }
 .desc{
     padding-top: .5em;
     color: rgba(128, 128, 128, 0);
-    animation: pop 10s;
+    animation: pop 5s;
     animation-fill-mode: forwards;
 }
 @keyframes pop {
@@ -83,9 +94,14 @@ nav{
         border-bottom: 0.1em solid white;
     }
     #pres{
+        flex-direction: column;
         padding: 0.5em 0 0 0.5em;
     }
     h2{
-        font-size: 24px;
+        font-size: 20px;
+    }
+    .w40{
+        margin: auto;
+        width: 90%;
     }
 }
