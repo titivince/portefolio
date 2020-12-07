@@ -10,6 +10,10 @@
     font-family: "Minecraftia-Regular";
     src:url(font/Minecraftia-Regular.ttf);
 }
+
+.frag{
+    font-family: "frag";
+}
 body{
     scroll-behavior: smooth;
     background: linear-gradient(to bottom, #003366 0%, #7827ca 100%);
@@ -23,10 +27,11 @@ nav{
 }
 #nav, #nav1, #nav2, #nav3{
     border: none;
+    font-size: 16px;
     background-color: rgb(200, 200, 200);
     font-family: "frag";
     border-right: 0.1em solid white;
-    padding: 0.5em 1em;
+    padding: 0.6em 1em;
     cursor: pointer;
 }
 #nav:hover, #nav1:hover, #nav2:hover, #nav3:hover{
@@ -35,18 +40,16 @@ nav{
 :focus{
     outline: none;
 }
-#pres{
-    padding: 3em 0 0 1em;
+#pres, #skills{
+    padding: 5em 0 10em 0;
     display: flex;
     justify-content: space-around;
 }
-#name{
+#name, #under{
     font-family: "Minecraftia-Regular";
-    font-weight: normal;
+    font-size: 25px;
 }
-#under{
-    font-family: "Minecraftia-Regular";
-    font-weight: normal;
+#under{ /* create blink effect */
     animation: blink-animation .9s steps(2, start) infinite;
   }
   @keyframes blink-animation {
@@ -55,26 +58,30 @@ nav{
     }
   }
 .round{
-    border-radius: 50%;
-    border: 2px solid #ff0000;
+    border-radius: 20% 30% 20% 80%;
+    border: 1px solid #fff;
 }
-.w40{
-    width: 40%;
+.w45{
+    width: 45%;
 }
 .center{
     text-align: center;
   }
+  h2{
+      font-size: 25px;
+  }
   h3{
       padding: .5em 0;
   }
-.desc{
+.desc{ /* create pop effect */
     padding-top: .5em;
     color: rgba(128, 128, 128, 0);
-    animation: pop 5s;
+    font-size: 18px;
+    animation: pop 7s;
     animation-fill-mode: forwards;
 }
 @keyframes pop {
-    90%{
+    70%{
         color: rgba(128, 128, 128, 0);
     }
     100%{
