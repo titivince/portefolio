@@ -8,13 +8,13 @@ var type = document.getElementById("name");
 var name = "Vincent Perier";
 
 function topPage(){
-    scrollTo(0, 0);
+    window.scrollTo({top: 0, behavior: 'smooth'});
 }
 function block1(){
-    presantation.scrollIntoView(true);
+    window.scrollTo({top: 0, behavior: 'smooth'});
 }
 function block2(){
-    skill.scrollIntoView(true)
+    window.scrollTo({top: 500, behavior: 'smooth'});
 }
 function printName(){ /* create the typing effect */
     if(i < name.length){

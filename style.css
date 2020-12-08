@@ -21,6 +21,7 @@ body{
 nav{
     width: 100%;
     position: fixed;
+    z-index: 10;
     display: flex;
     background-color: rgb(200, 200, 200);
     border-radius: 0 0 1em 0;
@@ -57,10 +58,24 @@ nav{
       visibility: hidden;
     }
   }
-.round{
-    border-radius: 20% 30% 20% 80%;
-    border: 1px solid #fff;
+  .rounded{
+      border-radius: 50%;
+  }
+.blur{
+    -webkit-filter: blur(5px);
+	filter: blur(5px);
+	-webkit-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
 }
+.blur:hover{
+    -webkit-filter: blur(0);
+	filter: blur(0);
+}
+.black-white{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
 .w45{
     width: 45%;
 }
@@ -88,7 +103,7 @@ nav{
       color: rgba(128, 128, 128, 1);
     }
   }
-@media screen and (max-width: 421px){
+@media screen and (max-width: 425px){
     nav{
         position: static;
         display: flex;
@@ -102,12 +117,12 @@ nav{
     }
     #pres{
         flex-direction: column;
-        padding: 0.5em 0 0 0.5em;
+        padding: 1em 0 ;
     }
     h2{
         font-size: 20px;
     }
-    .w40{
+    .w45{
         margin: auto;
         width: 90%;
     }
