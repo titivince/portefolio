@@ -112,23 +112,14 @@ nav{
     border: none;
     background: none;
     cursor: pointer;
-    animation: down 1s infinite alternate-reverse;
+    animation: down 1s infinite linear alternate-reverse;
 }
 @keyframes down {
     0%{
         top: 0;
     }
-    25%{
-        top: 4px;
-    }
-    50%{
-        top: 8px;
-    }
-    75%{
-        top: 12px;
-    }
     100%{
-        top: 16px;
+        top: 12px;
     }
 }
 @media screen and (max-width: 425px){
