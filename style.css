@@ -23,26 +23,28 @@ nav{
     position: fixed;
     z-index: 10;
     display: flex;
-    background-color: rgb(200, 200, 200);
+    background-color: #300050;
     border-radius: 0 0 1em 0;
 }
 #nav, #nav1, #nav2, #nav3{
     border: none;
     font-size: 16px;
-    background-color: rgb(200, 200, 200);
+    background-color: #300050;
     font-family: "frag";
+    color: rgb(255, 255, 255);
     border-right: 0.1em solid white;
     padding: 0.6em 1em;
     cursor: pointer;
 }
 #nav:hover, #nav1:hover, #nav2:hover, #nav3:hover{
     background-color: rgb(255, 255, 255);
+    color: black;
 }
 :focus{
     outline: none;
 }
 #pres, #skills{
-    padding: 5em 0 10em 0;
+    padding-top: 10em;
     display: flex;
     justify-content: space-around;
 }
@@ -103,6 +105,32 @@ nav{
       color: rgba(128, 128, 128, 1);
     }
   }
+
+#suivant{
+    position: relative;
+    margin-top: 5em;
+    border: none;
+    background: none;
+    cursor: pointer;
+    animation: down 1s infinite alternate-reverse;
+}
+@keyframes down {
+    0%{
+        top: 0;
+    }
+    25%{
+        top: 4px;
+    }
+    50%{
+        top: 8px;
+    }
+    75%{
+        top: 12px;
+    }
+    100%{
+        top: 16px;
+    }
+}
 @media screen and (max-width: 425px){
     nav{
         position: static;
