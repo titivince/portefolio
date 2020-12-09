@@ -22,13 +22,13 @@ nav{
     position: fixed;
     z-index: 10;
     display: flex;
-    background-color: #300050;
+    background-color: rgba(0, 0, 0, 0);
     border-radius: 0 0 1em 0;
 }
 #nav, #nav1, #nav2, #nav3{
     border: none;
     font-size: 16px;
-    background-color: #300050;
+    background-color:  rgba(0, 0, 0, 0);
     font-family: "frag";
     color: #fff;
     border-right: 0.1em solid #fff;
@@ -43,7 +43,7 @@ nav{
     outline: none;
 }
 #pres, #skills{
-    padding-top: 8em;
+    padding-top: 6em;
     display: flex;
     justify-content: space-around;
 }
@@ -118,6 +118,10 @@ img{
     height: 200px;
     padding: 2em 0;
     display: block;
+}
+footer{
+    background-color: #000;
+    color: rgb(128, 128, 128);
 }
 @media screen and (max-width: 425px){
     nav{
