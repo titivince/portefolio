@@ -13,8 +13,10 @@
 .frag{
     font-family: "frag";
 }
-body{
+html{
     scroll-behavior: smooth;
+}
+body{
     background: linear-gradient(to bottom, #004488 0%, #630eec 100%);
 }
 nav{
@@ -118,6 +120,27 @@ img{
     height: 200px;
     padding: 2em 0;
     display: block;
+}
+#projets{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.block{
+    margin: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+    background-color: #fff;
+}
+.block-r{
+    border-radius: .5em 1.5em 1.5em .5em;
+}
+.block-l{
+    border-radius: 1.5em .5em .5em 1.5em;
+    align-items: flex-end;
 }
 footer{
     background-color: #000;
