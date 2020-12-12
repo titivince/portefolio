@@ -138,9 +138,14 @@ img{
 .block-r{
     border-radius: .5em 1.5em 1.5em .5em;
 }
+.img-border-r{
+    border-radius: .5em 0 0 .5em;
+}
 .block-l{
     border-radius: 1.5em .5em .5em 1.5em;
-    align-items: flex-end;
+}
+.img-border-l{
+    border-radius: 0 .5em .5em 0;
 }
 footer{
     background-color: #000;
