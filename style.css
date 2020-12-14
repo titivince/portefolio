@@ -67,13 +67,23 @@ img{
 }
 .rounded{
     border-radius: 50%;
-  }
-.black-white{
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+}
+.slide{
+    animation: slider infinite linear 15s;
+}
+@keyframes slider {
+    0%{
+       transform: translateX(calc(180px * 4));
+    }
+    100%{
+        transform: translateX(calc(-120px * 5));
+    }
 }
 .w45{
     width: 45%;
+}
+.overflow-h{
+    overflow: hidden;
 }
 .center{
     text-align: center;
