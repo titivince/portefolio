@@ -11,8 +11,7 @@ var suivant = document.getElementById("suivant");
 var skills = document.getElementById("skills")
 var suivant1 = document.getElementById("suivant1");
 var projets = document.getElementById("projets");
-
-
+/* create function */
 function topPage(){
     window.scrollTo({top: 0, behavior: 'smooth'});
 }
