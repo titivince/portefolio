@@ -132,6 +132,7 @@ img{
 }
 #projets, form{
     width: 80%;
+    padding-top: 2em;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -162,6 +163,9 @@ img{
     border-radius: 0 .5em .5em 0;
     max-width: 100%;
     height: auto;
+}
+.contact{
+    margin-top: 2em;
 }
 input, textarea{
     min-width: 10%;
