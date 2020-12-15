@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function() { /* start when html is ready */
 var i = 0;
 var nav = document.getElementById("nav");
 var nav1 = document.getElementById("nav1");

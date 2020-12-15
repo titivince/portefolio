@@ -17,7 +17,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: linear-gradient(to bottom, #004488 0%, #630eec 100%);
+    background: linear-gradient(to bottom, #2c68c2 0%, #802fe9 100%);
 }
 nav{
     width: 100%;
@@ -30,7 +30,7 @@ nav{
 #nav, #nav1, #nav2, #nav3{
     border: none;
     font-size: 16px;
-    background-color:  rgba(0, 0, 0, 0);
+    background-color:  rgba(0, 0, 0, 0.2);
     font-family: "frag";
     color: #fff;
     border-right: 0.1em solid #fff;
@@ -107,7 +107,7 @@ img{
         color: rgba(128, 128, 128, 0);
     }
     100%{
-      color: rgba(128, 128, 128, 1);
+      color: rgb(200, 200, 200);
     }
   }
 #suivant, #suivant1{ /* create down effect */
@@ -144,7 +144,7 @@ img{
     padding: .5em;
     display: flex;
     justify-content: space-between;
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 .img-projet{
     max-width: 52%;
@@ -191,7 +191,7 @@ textarea{
 footer{
     padding: .5em;
     background-color: #000;
-    color: rgb(128, 128, 128);
+    color: rgb(200, 200, 200);
 }
 @media screen and (max-width: 426px){ /* responsive */
     nav{
