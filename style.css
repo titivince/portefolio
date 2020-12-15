@@ -69,14 +69,15 @@ img{
     border-radius: 50%;
 }
 .slide{
-    animation: slider infinite linear 15s;
+    margin: 5px 5px 0 0;
+    animation: slider infinite linear 20s;
 }
 @keyframes slider {
     0%{
-       transform: translateX(calc(180px * 4));
+       transform: translateX(720px);
     }
     100%{
-        transform: translateX(calc(-120px * 5));
+        transform: translateX(-600px);
     }
 }
 .w45{
@@ -131,7 +132,7 @@ img{
     display: block;
 }
 #projets, form{
-    width: 80%;
+    width: 78%;
     padding-top: 2em;
     margin: auto;
     display: flex;
@@ -146,7 +147,8 @@ img{
     background-color: #fff;
 }
 .img-projet{
-    max-width: 75%;
+    max-width: 52%;
+    height: auto;
 }
 .block-r{
     border-radius: .5em 1.5em 1.5em .5em;
@@ -191,7 +193,7 @@ footer{
     background-color: #000;
     color: rgb(128, 128, 128);
 }
-@media screen and (max-width: 425px){ /* responsive */
+@media screen and (max-width: 426px){ /* responsive */
     nav{
         position: static;
         display: flex;
