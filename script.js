@@ -11,6 +11,7 @@ var suivant = document.getElementById("suivant");
 var skills = document.getElementById("skills")
 var suivant1 = document.getElementById("suivant1");
 var projets = document.getElementById("projets");
+var mailId = document.getElementById("mail");
 /* create function */
 function topPage(){
     window.scrollTo({top: 0, behavior: 'smooth'});
@@ -25,11 +26,20 @@ function block3(){
     projets.scrollIntoView({behavior: 'smooth'});
 }
 function printName(){ /* create the typing effect */
-    if(i < name.length){
-        type.innerHTML += name.charAt(i);
-        i++;
-        setTimeout(printName, 300);
-    }
+  if(i < name.length){
+      type.innerHTML += name.charAt(i);
+      i++;
+      setTimeout(printName, 300);
+  }
+}
+function copymail(){
+    var tempInput = document.createElement("input");
+    tempInput.value = "vincent25200009@gmail.com";
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempInput);
+    alert("Mail copié");
 }
 /* code start */
 printName();
@@ -39,5 +49,6 @@ nav2.addEventListener("click", block2);
 suivant.addEventListener("click", block2);
 nav3.addEventListener("click", block3);
 suivant1.addEventListener("click", block3);
+mailId.addEventListener("click", copymail);
 
 }
