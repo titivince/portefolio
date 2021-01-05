@@ -17,14 +17,14 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: linear-gradient(to bottom, #2c68c2 0%, #802fe9 100%);
+    background: linear-gradient(to bottom, #ecffed 0%, #b1c2d6 100%);
 }
 nav{
     width: 100%;
     position: fixed;
     z-index: 10;
     display: flex;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
     border-radius: 0 0 1em 0;
 }
 #nav, #nav1, #nav2, #nav3{
@@ -32,7 +32,7 @@ nav{
     font-size: 16px;
     background-color:  rgba(0, 0, 0, 0.2);
     font-family: "frag";
-    color: #fff;
+    color: black;
     border-right: 0.1em solid #fff;
     padding: 0.6em 1em;
     cursor: pointer;
@@ -45,7 +45,7 @@ nav{
     outline: none;
 }
 #pres, #skills{
-    padding-top: 6em;
+    padding-top: 5em;
     display: flex;
     justify-content: space-around;
 }
@@ -107,7 +107,7 @@ img{
         color: rgba(128, 128, 128, 0);
     }
     100%{
-      color: rgb(200, 200, 200);
+      color: rgb(0, 0, 0);
     }
   }
 #suivant, #suivant1{ /* create down effect */
@@ -127,8 +127,7 @@ img{
     }
 }
 .block-img{
-    background-color: #fff;
-    padding: 2em 0;
+    margin: 2em 0;
     display: block;
 }
 #projets{
@@ -167,7 +166,7 @@ img{
     height: auto;
 }
 .contact{
-    margin-top: 2em;
+    margin-top: 1em;
 }
 #mail{
     cursor: pointer;
