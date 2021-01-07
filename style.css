@@ -166,7 +166,22 @@ img{
     height: auto;
 }
 .contact{
-    margin-top: 1em;
+    margin: 1em auto;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+form input, textarea{
+    resize: vertical;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    margin: 1em 2em;
+}
+textarea, input[type=submit]{
+    margin: 1em auto;
 }
 #mail{
     cursor: pointer;
@@ -176,7 +191,7 @@ img{
     font-size: x-large;
     color: #000;
     border-bottom: 1px solid transparent;
-    transition: 2s;
+    transition: 1s;
 }
 #mail:hover{
     border-bottom: 1px solid black;

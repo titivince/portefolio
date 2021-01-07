@@ -56,20 +56,28 @@
         <div>
             <div class="block block-r">
                 <div class="img-projet">
-                    <img class="img-border-r" src="https://picsum.photos/500/250/?blur=2" alt="projet image">
+                    <img class="img-border-r" src="https://picsum.photos/500/250/?blur=2">
                 </div>
-                <p class="w45">Describe the projet in few line. Lorem ipsum dolor consectetur adipisicing elit. Fuga ea obcaecati, nulla perferendis molestiae a consequuntur tempore earum cum ipsa itaque est.</p>
+                <p class="w45">Describe the projet in few line. Lorem ipsum dolor consectetur adipisicing elit. Fuga ea obcaecati, nulla perferendis molestiae a consequuntur cum ipsa itaque est.</p>
             </div>
             <div class="block block-l">
                 <p class="w45">Describe the projet in few line</p>
                 <div class="img-projet">
-                    <img class="img-border-l"src="https://picsum.photos/500/250/?blur=2" alt="projet image">
+                    <img class="img-border-l"src="https://picsum.photos/500/250/?blur=2">
                 </div>
             </div>
         </div>
     </div>
-    <div class="contact center">
-        <h2 class="center">Me contacter</h2>
+    <div class="contact w45 center">
+        <form action="mail.php" method="POST">
+            <h2 class="center">Me contacter</h2>
+            <div>
+                <input type="text" name="name" placeholder="Nom Prenom" minlength="2">
+                <input type="email" name="mail" placeholder="Mail" minlength="2">  
+            </div>
+            <textarea name="message" cols="40" rows="10" placeholder="Message" minlength="2"></textarea>
+            <input type="submit">
+        </form>
         <button id="mail">Mon mail</button>
     </div>
     <footer>
